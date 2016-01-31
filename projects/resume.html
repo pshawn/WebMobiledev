@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<style>
+.ui-page
+{
+   background: transparent url(bg.jpg) no-repeat center center;
+}
+.custom-btn {   
+
+
+
+    height: 50px !important;
+}
+</style>	
+	
+</head>
+
+<body>
+
+	<!-- /header -->
+	<div data-role="page" id="foo">
+
+	<div data-role="header">
+		<h1>Main Page</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+
+	 <div> <img src="resume.png"> </div>
+	<a href="#res" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-user">Resume</a>
+
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>Prasanth Pillai</h4>
+	</div><!-- /footer -->
+    </div><!-- /page -->
+	
+	
+	
+	<div data-role="page" id="res">
+	<div data-role="header">
+		<h1>Resume</h1>
+	</div>
+	<ul data-role="listview"  data-inset="true">
+    <li><a data-role="button" class="custom-btn" href="#skills">
+        <img src="skills.jpg">
+    <h1>Skills</h1>
+    </a>
+    </li>
+    <li><a data-role="button" class="custom-btn"  href="#Classes">
+        <img src="CU.jpg">
+    <h1>Classes</h1>
+    </a>
+    </li>
+    <li><a data-role="button" class="custom-btn"  href="#Project">
+        <img src="pj.png">
+    <h1>Project</h1>
+    </a>
+    </li>
+</ul>
+       
+       <a href="#foo" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">Home</a>
+
+</div>
+
+<div data-role="page" id="skills"> 
+
+<div data-role="header">
+		<h1>Skills</h1>
+	</div><!-- /header -->
+	
+	<ul data-role="listview"  data-inset="true">
+    <li>
+    Java
+    </li>
+    <li>
+    C 
+    </li>
+   <li>
+    Javascript,HTML,CSS
+    </li>
+<li>
+    Networking concepts (TCP/IP)
+    </li>
+
+<li>
+    Routing concepts 
+    </li>
+    
+</ul>
+	
+  <a href="#foo" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">Home</a>
+</div>
+
+<div data-role="page" id="Classes"> 
+
+<div data-role="header">
+		<h1>Classes</h1>
+	</div><!-- /header -->
+	<ul data-role="listview"  data-inset="true">
+	<li>
+    Object Oriented Software Development (Sysc 2004)
+    </li>
+   <li> Foundations of imperative programming (Sysc 2006)</li>
+<li>Introduction to Real time Systems (Sysc 2003) </li>
+<li>Computer Communications (Sysc 4602) </li>
+<li>Real Time Concurrent Systems (Sysc 3303)</li>
+<li>Distributed Network Processing (Sysc 4504)</li>
+<li> Communications Software (Sysc 4502) </li>
+<li> Wireless Communications (Sysc 4607) </li>
+<li>Telecommunications Engineering (Sysc 4700)</li>
+<li> Digital Electronics (Elec 3500)
+    </li>
+</ul>
+  <a href="#foo" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">Home</a>
+
+</div>
+
+<div data-role="page" id="Project"> 
+
+<div data-role="header">
+		<h1>Projects</h1>
+	</div><!-- /header -->
+	<ul data-role="listview"  data-inset="true">
+	<li> Registeration Helper App </li>
+	<li> TFTP implmentation in Java </li>
+	<li> Smart Home system (IOT) </li>
+	</ul>
+  <a href="#foo" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">Home</a>
+</div>	
+
+</body>
+</html>
+
